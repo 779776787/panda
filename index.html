@@ -1,39 +1,41 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://cdn.octopusgame.com/css/apps/octopus/page_9519b68.css">
-    <title>Feedback</title>
+    <link rel="stylesheet" href="/css/page.css">
+    <title>PandaMousePro & PandaGamepadPro</title>
+	<style>
+	
+	</style>
 </head>
 <body>
     <div class="content">
-        <div class="feedback">Feedback</div>
+        <div class="feedback">熊猫键鼠手柄映射</div>
         <div class="intro">
-            You can post your problems and questions on our Facebook group.<br>
-            It’s necessary to have your phone model, input device model, and screenshots or videos of problems attached in your post.
+			对两个APK的UI进行简化同时把汉化补全.如果打开闪退,请给足所有权限!<br>
+			PandaMousePro 是键盘鼠标映射  PandaGamepadPro 是游戏手柄映射<br>
+			根据自己需要的下载就行了
+		   
         </div>
         <div class="intro feedback">
-            <a id="facebook_link" onclick="callBrowser()"><img src="https://cdn.octopusgame.com/img/octopus/icon_facebook_66ce340.png">Go to Panda Facebook Group</a>
         </div>
-        <div class="title">FAQ</div>
-        <div class="sub-title">Mocute 058 Solution!</div>
+        <div class="title">下载 & 激活</div>
+        <div class="sub-title"><b>- 软件下载</b></div>
         <div class="intro answer">
-            If you can't use Mocute 058 for gaming, please select MOCUTE-058_M21-AUTO in bluetooth, DO NOT USE MOCUTE-058-PUBG.
+            键鼠映射: <a class="dlink" onclick="callBrowser()">PandaMousePro.apk</a><br>
+            手柄映射: <a class="dlink" onclick="callBrowser()">PandaGamepadPro.apk</a><br>
         </div>
-        <div class="sub-title">
-            Gamepads Hardware Mode
-        </div>
+        <div class="sub-title"><b>- 激活工具</b></div>
         <div class="intro answer">
-            For some gamepads like PG-9100, 9087, 9025 who have multiple modes(Android, PC, etc.), you should change the modes to Android to work on your Android phone.
+			安卓12以下: <a class="dlink" onclick="callBrowser()">GamepadPro.Active.Tool.zip</a><br>
+			安卓12下载: <a class="dlink" onclick="callBrowser()">GamepadPro.Active.Tool12.zip</a><br>
         </div>
     </div>
 </body>
 <script>
-    function callBrowser() {
-        var link = "https://www.facebook.com/pg/PandaGamingStudio/posts/?ref=page_internal"
+    function callBrowser(link) {
         window.nativeClient.jumpBrowser(link)
     }
 </script>
