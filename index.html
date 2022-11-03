@@ -21,21 +21,27 @@
         <div class="intro feedback">
         </div>
         <div class="title">下载 & 激活</div>
-        <!-- <div class="sub-title"><b>- 软件下载</b></div> -->
+        <div class="sub-title"><b>软件下载</b></div>
         <div class="intro answer">
-            键鼠映射: <a class="dlink" onclick="callBrowser()">PandaMousePro.apk</a><br>
-            手柄映射: <a class="dlink" onclick="callBrowser()">PandaGamepadPro.apk</a><br>
+            键鼠映射: <a class="dlink" href="javascript:void(0);" onclick="callBrowser('PandaMousePro.apk')">PandaMousePro.apk</a><br>
+            手柄映射: <a class="dlink" href="javascript:void(0);" onclick="callBrowser('PandaGamepadPro.apk')">PandaGamepadPro.apk</a><br>
         </div>
-        <div class="sub-title"><b>- 激活工具</b></div>
+        <div class="sub-title"><b>激活工具</b></div>
         <div class="intro answer">
-			安卓12以下: <a class="dlink" onclick="callBrowser()">GamepadPro.Active.Tool.zip</a><br>
-			安卓12下载: <a class="dlink" onclick="callBrowser()">GamepadPro.Active.Tool12.zip</a><br>
+			安卓12以下: <a class="dlink" href="javascript:void(0);" onclick="callBrowser('GamepadPro.Active.Tool.zip')">GamepadPro.Active.Tool.zip</a><br>
+			安卓12激活: <a class="dlink" href="javascript:void(0);" onclick="callBrowser('GamepadPro.Active.Tool12.zip')">GamepadPro.Active.Tool12.zip</a><br>
         </div>
     </div>
 </body>
 <script>
-    function callBrowser(link) {
-        window.nativeClient.jumpBrowser(link)
-    }
+	function callBrowser(file) {
+		var dlink = window.location.origin + '/download/' + file;
+		if(window.location.hash == '#app'){
+			window.location.replace(dlink);
+		} else {
+			window.nativeClient.jumpBrowser(dlink)
+		}
+		
+	}
 </script>
 </html>
