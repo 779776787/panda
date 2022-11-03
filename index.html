@@ -35,13 +35,7 @@
 </body>
 <script>
 	function callBrowser(file) {
-		var dlink = window.location.origin + '/panda/download/' + file;
-		if(window.location.hash == '#app'){
-			window.location.replace(dlink);
-		} else {
-			window.nativeClient.jumpBrowser(dlink)
-		}
-		
+		window.location.href = window.location.origin + '/panda/download/' + file;
 	}
 </script>
 </html>
